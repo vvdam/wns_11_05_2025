@@ -142,7 +142,7 @@ main {
 }
 
 .modal form button[type="submit"]:hover {
-    background: #1565c0;
+    background: #000000;
 }
 
 @media (max-width: 600px) {
