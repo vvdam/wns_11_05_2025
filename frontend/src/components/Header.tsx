@@ -3,6 +3,7 @@ import { useQuery, useMutation } from "@apollo/client";
 import { GET_COUNTRIES, ADD_COUNTRY } from "../api/example";
 import { Country } from "../types";
 import { useState } from "react";
+import "../App.css";
 
 export function Header() {
     const { data } = useQuery<{ countries: Country[] }>(GET_COUNTRIES);
@@ -34,6 +35,7 @@ export function Header() {
                 {data &&
                     data.countries.map((country) => (
                         <Link
+                            className="Link"
                             key={country.code}
                             to={`/country/${country.code}`}
                         >
