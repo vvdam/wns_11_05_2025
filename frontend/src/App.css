@@ -144,3 +144,25 @@ main {
 .modal form button[type="submit"]:hover {
     background: #1565c0;
 }
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px 8px;
+    }
+    .header nav {
+        flex-wrap: wrap;
+        gap: 6px;
+        overflow-x: auto;
+        max-width: 100vw;
+    }
+    .header h1 {
+        font-size: 1.1em;
+    }
+    .header button {
+        font-size: 1em;
+        padding: 6px 10px;
+    }
+}

@@ -17,7 +17,9 @@ export function Header() {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         if (!name || !code || !emoji) return;
-        await addCountry({ variables: { data: { name, code, emoji } } });
+        await addCountry({
+            variables: { data: { name, code, emoji } },
+        });
         setShowModal(false);
         setName("");
         setCode("");

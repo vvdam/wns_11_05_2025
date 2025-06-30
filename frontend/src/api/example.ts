@@ -28,6 +28,16 @@ export const GET_COUNTRY = gql`
     }
 `;
 
+export const GET_CONTINENTS = gql`
+    query GetContinents {
+        continents {
+            id
+            code
+            name
+        }
+    }
+`;
+
 export const ADD_COUNTRY = gql`
     mutation AddCountry($data: NewCountryInput!) {
         addCountry(data: $data) {
